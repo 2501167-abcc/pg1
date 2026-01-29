@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>食事記録詳細</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/detail.js" defer></script>
+    </head>
+    <body>
+
+        <header class="Appbar_detailbar">
+            <button id="backBtn">←</button>
+
+            <div class="detailCenter">
+                <h2 id="dateTitle"></h2>
+            </div>
+
+            <div class="detailTools">
+                <label class="iconBtn">
+                    📷
+                    <input type="file" id="photoInput" accept="image/*" hidden>
+                </label>
+
+                <input type="number" id="calInput" class="miniInput" placeholder="kcal">
+
+                <input type="text" id="memoInput" class="miniInput" placeholder="メモ">
+
+                <button id="saveBtn" class="iconBtnBtn">＋</button>
+            </div>
+        </header>
+
+        <main class="container">
+            <div id="entries"></div>
+        </main>
+
+        <button class="homeBtn" id="homeBtn">ホーム</button>
+
+        <div id="imgModal" class="modal hidden">
+            <span id="modalClose" class="modalClose">×</span>
+            <img id="modalImg" class="modalImg" alt="拡大画像">
+        </div>
+    </body>
+</html>
